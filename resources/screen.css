@@ -182,12 +182,11 @@ img {
 }
 .links {
 	float:right;
+    text-align: right;
 	padding:0;
 }
-.links ul {
-	list-style: none;
-	text-align: right;
-	margin: 0;
+.links a {
+	padding: 2px;
 }
 .name {
 	background:#f8f8f8;
