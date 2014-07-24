@@ -1,0 +1,332 @@
+body {
+	margin:0;
+	padding:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	width:100%;
+	background:#222222;
+	min-width:600px;		/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+	font-size:90%;
+	font-family: 'PT Serif', arial, serif;
+	color:#505767;
+}
+a {
+	color:#369;
+}
+a:hover {
+	color:#fff;
+	background:#369;
+	text-decoration:none;
+}
+h1, h2, h3 {
+	margin:.8em 0 .2em 0;
+	padding:0;
+}
+p {
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+img {
+	margin:10px 0 5px;
+}
+#ads img {
+	display:block;
+	padding-top:10px;
+}
+
+/* Header styles */
+#header {
+	clear:both;
+	float:left;
+	width:100%;
+	height: 100px;
+}
+#header {
+}
+#header p,
+#header h1,
+#header h2 {
+	padding:.4em 15px 0 15px;
+	margin:0;
+}
+#header ul {
+	clear:left;
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:10px 0 0 0;
+	padding:0;
+}
+#header ul li {
+	display:inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#header ul li a {
+	display:block;
+	float:left;
+	margin:0 0 0 1px;
+	padding:3px 10px;
+	text-align:center;
+	background:#eee;
+	color:#000;
+	text-decoration:none;
+	position:relative;
+	left:15px;
+	line-height:1.3em;
+}
+#header ul li a:hover {
+	background:#369;
+	color:#fff;
+}
+#header ul li a.active,
+#header ul li a.active:hover {
+	color:#fff;
+	background:#000;
+	font-weight:bold;
+}
+#header ul li a span {
+	display:block;
+}
+/* 'widths' sub menu */
+#layoutdims {
+	clear:both;
+	background:#eee;
+	border-top:4px solid #000;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:right;
+}
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	background:#222222;		/* right column background colour */
+}
+.threecol .colmid {
+	right:15%;			/* width of the right column */
+	background:#fff;		/* center column background colour */
+}
+.threecol .colleft {
+	right:70%;			/* width of the middle column */
+	background:#222222;		/* left column background colour */
+}
+.threecol .col1 {
+	width:70%;			/* width of center column content (column width minus padding on either side) */
+	left:100%;			/* 100% plus left padding of center column */
+	border-top: solid 15px #fdb120;
+	border-bottom: solid 15px #fdb120;
+}
+.threecol .col2 {
+	width:11%;			/* Width of left column content (column width minus padding on either side) */
+	left:21%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width:11%;			/* Width of right column content (column width minus padding on either side) */
+	left:95%;			/* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+/* 2 Column (double page) settings */
+.doublepage {
+	background:#eee;		/* right column background colour */
+}
+.doublepage .colleft {
+	right:70%;			/* right column width */
+	background:#fff;		/* left column background colour */
+}
+.doublepage .col1 {
+	width:26%;			/* left column content width (column width minus left and right padding) */
+	left:72%;			/* right column width plus left column left padding */
+	border-top: none;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	border-bottom: solid 3px #fdb120;
+}
+.doublepage .col2 {
+	width:64%;			/* right column content width (column width minus left and right padding) */
+	left:76%;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
+}
+/* Footer styles */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+}
+#footer p {
+	padding:10px;
+	margin:0;
+}
+.links {
+	float:right;
+	padding:0;
+}
+.links ul {
+	list-style: none;
+	text-align: right;
+	margin: 0;
+}
+.name {
+	background:#f8f8f8;
+	border-bottom: solid 1px #e0e0e0;
+	height: 120px;
+	padding: 40px;
+	margin-bottom: 20px;
+}
+.name .face {
+	background: white;
+	border: solid 1px #e0e0e0;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	margin-right: 40px;
+	float: left;
+}
+.name h1 {
+	margin-bottom:0px;
+	color: #2276a4;
+}
+.name h2 {
+	font-variant: small-caps;
+	margin-top:0px;
+}
+.cvitem {
+	margin: 20px;
+	margin-top: 0px;
+	border-bottom: solid 1px #e0e0e0;
+	background: white;	
+}
+.cvitem h2 {
+	font-style: italic;
+	font-size: 1.3em;
+}
+.cvitem .personal {
+	list-style: none;
+	padding: 0px;
+}
+.cvitem ul {
+	list-style: none;
+	padding-left: 20px;
+}
+.cvitem  ul li:before {
+	content: "\00BB \0020";
+}
+.cvitem ul li {
+	text-indent: -10px;
+}
+dl {
+	display: block;
+}
+dt {
+	width: 15%;
+	font-variant: small-caps;
+}
+dd {
+	width: 80%;
+}
+dt, dd {
+	display: block;
+	float: left;
+	margin-top: 20px;
+	margin: 5px;
+	border-bottom: solid 1px #e0e0e0;
+}
+dt {
+	clear: both;
+}
+dd p {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.cvitem .last {
+	border-bottom: none;
+}
+.cvsubitem {
+	border-bottom: solid 1px #e0e0e0;
+}
+.cvsubitem h3 {
+	color: #2276a4;
+}
+.cvsubitem .date {
+	float: right;
+	background:#eeeeee;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-variant: small-caps;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+.cvsubitem .company {
+	font-style: italic;
+}
+.cap {
+	font-variant: small-caps;
+}
+.recommendation_link {
+	text-align: right;
+	cursor: pointer;
+	font-size: 0.8em;
+}
+.recommendation {
+	padding: 0;
+	border: solid 1px #eeeeee;
+	display: none;
+	color: #808797;
+}
+.recommender {
+	float: right;
+	font-style: italic;
+	color: #2276a4;
+}
+blockquote {
+	position:relative;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+blockquote::before {
+	content:"\201C";
+	position:absolute;
+	font-size:4.8em;
+	line-height:1;
+	left:-.5em;
+	top:0;
+	color:#999;
+}
+blockquote::after {
+	content:"\201D";
+	position:absolute;
+	font-size:4.8em;
+	line-height:1;
+	right:-.5em;
+	bottom:-.55em;
+	color:#999;
+}
+.skills a {
+	text-decoration: none;
+}
+
